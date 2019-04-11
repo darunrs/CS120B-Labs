@@ -19,7 +19,7 @@ int main(void)
     {
 		tmpB = PINB & 0x01;
 		tmpD = PIND;
-		weight = (tmpD * 2) + tmpB;
+		weight = (tmpD << 1) + tmpB;
 		tmpB = 0x00;
 		if (weight >= 70) {
 			tmpB = 0x02;
