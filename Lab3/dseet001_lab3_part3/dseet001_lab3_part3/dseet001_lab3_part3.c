@@ -17,7 +17,7 @@ unsigned char GetBit(unsigned char x, unsigned char k) {
 int main(void)
 {
 	DDRA = 0x00; PORTA = 0xFF;
-	DDRC = 0x00; PORTC = 0x00;
+	DDRC = 0xFF; PORTC = 0x00;
 	unsigned char gas = 0x00;
 	unsigned char safety = 0x00;
 	unsigned short fuel = 0x00;
